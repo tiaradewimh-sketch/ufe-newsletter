@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>UFE - Votre Actualité</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            color: #3e4444;
+            background-color: #f3f0ec;
+            margin: 0;
+            padding: 30px 0;
+        }
+        .wrapper {
+            width: 100%;
+            max-width: 650px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            box-shadow: 0 4px 20px rgba(165, 155, 145, 0.15);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        .header {
+            text-align: center;
+            padding: 40px 20px 25px 20px;
+            border-bottom: 2px dashed #e1dacb;
+            background-color: #ffffff;
+        }
+        .header img {
+            max-width: 240px;
+            height: auto;
+            display: inline-block;
+        }
+
+        /* Container & Animasi Dolar */
+        .dollar-animation-container {
+            width: 100%;
+            overflow: hidden;
+            background: #fcfbf9;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .dollar-track {
+            display: inline-block;
+            white-space: nowrap;
+            animation: marquee 15s linear infinite;
+        }
+        .dollar-item {
+            display: inline-block;
+            padding: 0 15px;
+            font-size: 20px;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        .main-title {
+            font-size: 24pt;
+            color: #1e3a60;
+            font-weight: bold;
+            text-align: center;
+            margin: 40px 0 30px 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .content {
+            padding: 10px 40px 40px 40px;
+        }
+        .article {
+            margin-bottom: 45px;
+        }
+        .article-tag {
+            background-color: #e88d8d;
+            color: #ffffff;
+            padding: 4px 12px;
+            font-size: 8.5pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            display: inline-block;
+            border-radius: 4px;
+            margin-bottom: 14px;
+        }
+        .article-title {
+            font-size: 16pt;
+            color: #1e3a60;
+            margin: 0 0 15px 0;
+            font-weight: bold;
+            line-height: 1.35;
+        }
+        .article-img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 18px;
+        }
+        .article-text {
+            font-size: 11pt;
+            line-height: 1.65;
+            color: #50555c;
+            text-align: justify;
+            margin-bottom: 18px;
+        }
+        .btn-link {
+            display: inline-block;
+            background-color: #2c4c7e;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 22px;
+            font-size: 9.5pt;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        .sidebar-box {
+            background-color: #ebf1f6;
+            border-left: 4px solid #e88d8d;
+            padding: 22px;
+            margin-top: 45px;
+            border-radius: 0 8px 8px 0;
+        }
+        .sidebar-title {
+            font-size: 12pt;
+            color: #1e3a60;
+            margin: 0 0 15px 0;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .sidebar-list {
+            margin: 0;
+            padding-left: 20px;
+        }
+        .sidebar-list li {
+            font-size: 10.5pt;
+            line-height: 1.6;
+            color: #50555c;
+            margin-bottom: 10px;
+        }
+        .footer {
+            background-color: #3a3f44;
+            color: #ffffff;
+            text-align: center;
+            padding: 35px 20px;
+            font-size: 9.5pt;
+        }
+        .footer a { color: #e1dacb; }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <img src="https://res.cloudinary.com/iwmddmao/image/upload/v1783308795/Logo_UFE_2_vlodub.jpg" alt="Union des Français de l'Étranger">
+        </div>
+
+        <!-- Jalur Animasi Dollar -->
+        <div class="dollar-animation-container">
+            <div class="dollar-track">
+                <span class="dollar-item">🪙</span><span class="dollar-item">💵</span>
+                <span class="dollar-item">🪙</span><span class="dollar-item">💵</span>
+                <span class="dollar-item">🪙</span><span class="dollar-item">💵</span>
+                <span class="dollar-item">🪙</span><span class="dollar-item">💵</span>
+                <span class="dollar-item">🪙</span><span class="dollar-item">💵</span>
+                <span class="dollar-item">🪙</span><span class="dollar-item">💵</span>
+                <span class="dollar-item">🪙</span><span class="dollar-item">💵</span>
+                <span class="dollar-item">🪙</span><span class="dollar-item">💵</span>
+                <span class="dollar-item">🪙</span><span class="dollar-item">💵</span>
+            </div>
+        </div>
+
+        <div class="main-title">VOTRE ACTUALITÉ</div>
+
+        <div class="content">
+            <div class="article">
+                <span class="article-tag">🏦 Comptes Bancaires</span>
+                <h2 class="article-title">Le CCSF se mobilise pour les Français de l'étranger</h2>
+                <img class="article-img" src="https://images.unsplash.com/photo-1501167786227-4cba60f6d58f?q=80&w=800&auto=format&fit=crop" alt="Banque de France">
+                <p class="article-text">
+                    À la demande du ministre de l'Économie, le Comité Consultatif du Secteur Financier (CCSF) a réuni parlementaires, Banque de France, établissements bancaires et représentants des Français de l'étranger afin d'examiner les difficultés rencontrées par les expatriés dans leurs relations avec les banques françaises.
+                </p>
+                <p class="article-text">
+                    Cette initiative fait suite aux débats menés au Sénat sur la fermeture de comptes bancaires des Français établis hors de France. Les échanges ont notamment porté sur les obligations réglementaires des banques : connaissance du client, lutte contre le blanchiment d'argent et financement du terrorisme, ainsi que sur les conséquences du futur règlement européen AMLR, qui entrera progressivement en application à partir de juillet 2027.
+                </p>
+                <p style="margin-top: 15px;">
+                    <a class="btn-link" href="https://www.banque-france.fr/fr/comites-consultatifs/comite-consultatif-du-secteur-financier" target="_blank">👉 En savoir plus</a>
+                </p>
+            </div>
+
+            <div class="article">
+                <span class="article-tag">👴 Pensions dans l'Union Européenne</span>
+                <h2 class="article-title">Find Your Pension : un service pour suivre vos droits à la retraite</h2>
+                <img class="article-img" src="https://images.unsplash.com/photo-1473186578172-c141e6798cf4?q=80&w=800&auto=format&fit=crop" alt="Retraite">
+                <p class="article-text">
+                    Le service Find Your Pension, lancé dans le cadre du projet European Tracking Service on Pensions (ETS), permet aux personnes ayant cotisé dans plusieurs États membres de l'Union européenne d'obtenir une vision consolidée de leurs droits à la retraite. Cette initiative concerne particulièrement les Français de l'étranger.
+                </p>
+                <p class="article-text">
+                    À ce jour, seules la France et la Belgique alimentent la plateforme. L'Allemagne et les Pays-Bas devraient rejoindre le dispositif en 2026, tandis que l'intégration progressive des autres États membres est attendue par la suite.
+                </p>
+                <p style="margin-top: 15px;">
+                    <a class="btn-link" href="https://www.findyourpension.eu/" target="_blank">👉 En savoir plus</a>
+                </p>
+            </div>
+
+            <div class="sidebar-box">
+                <h3 class="sidebar-title">📌 À Retenir</h3>
+                <ul class="sidebar-list">
+                    <li><strong>Relations bancaires :</strong> Le CCSF poursuit ses travaux pour améliorer les relations entre les banques françaises and les Français de l'étranger.</li>
+                    <li><strong>Réglementation AMLR :</strong> Le règlement européen renforcera progressivement les obligations des banques à partir de 2027.</li>
+                    <li><strong>Retraite ETS :</strong> Find Your Pension facilite le suivi des droits à la retraite acquis dans plusieurs pays européens.</li>
+                    <li><strong>Information continue :</strong> UFE Monde continuera de vous informer des évolutions importantes concernant les Français établis hors de France.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p style="margin: 0 0 10px 0;"><strong>Union des Français de l'Étranger (UFE)</strong></p>
+            <p style="margin: 0 0 20px 0; font-size: 10pt; color: #dddddd;">L'UFE, association reconnue d'utilité publique, est le réseau de référence des Français établis hors de France.</p>
+            <p style="font-size: 9pt; color: #aaaaaa; margin: 0; border-top: 1px solid #555555; padding-top: 15px;">
+                Vous recevez cet e-mail car vous êtes inscrit à la newsletter de l'UFE. <br>
+                <a href="#">Se désabonner</a> | <a href="#">Mettre à jour mes préférences</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
